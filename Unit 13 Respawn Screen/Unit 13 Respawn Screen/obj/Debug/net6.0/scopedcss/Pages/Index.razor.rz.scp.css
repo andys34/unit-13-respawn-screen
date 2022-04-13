@@ -1,0 +1,11 @@
+#flex-row[b-nydxs515ii] {
+    color: black;
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+#bottom-controls[b-nydxs515ii] {
+    display: flex;
+    flex-direction: row;
+}
