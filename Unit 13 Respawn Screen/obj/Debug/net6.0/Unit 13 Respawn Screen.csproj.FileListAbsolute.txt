@@ -1,0 +1,28 @@
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\bin\Debug\net6.0\appsettings.json
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\bin\Debug\net6.0\Unit 13 Respawn Screen.staticwebassets.runtime.json
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\bin\Debug\net6.0\Unit 13 Respawn Screen.exe
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\bin\Debug\net6.0\Unit 13 Respawn Screen.deps.json
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\bin\Debug\net6.0\Unit 13 Respawn Screen.runtimeconfig.json
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\bin\Debug\net6.0\Unit 13 Respawn Screen.dll
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\bin\Debug\net6.0\Unit 13 Respawn Screen.pdb
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\Unit 13 Respawn Screen.csproj.AssemblyReference.cache
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\Unit 13 Respawn Screen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\Unit 13 Respawn Screen.AssemblyInfoInputs.cache
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\Unit 13 Respawn Screen.AssemblyInfo.cs
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\Unit 13 Respawn Screen.csproj.CoreCompileInputs.cache
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\Unit 13 Respawn Screen.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\Unit 13 Respawn Screen.RazorAssemblyInfo.cache
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\Unit 13 Respawn Screen.RazorAssemblyInfo.cs
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\scopedcss\bundle\Unit 13 Respawn Screen.styles.css
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\scopedcss\projectbundle\Unit 13 Respawn Screen.bundle.scp.css
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\Unit 13 Respawn Screen.dll
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\refint\Unit 13 Respawn Screen.dll
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\Unit 13 Respawn Screen.pdb
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\Unit 13 Respawn Screen.genruntimeconfig.cache
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\ref\Unit 13 Respawn Screen.dll
+C:\Users\andis\Desktop\Unit 13 respawn screen\Unit 13 Respawn Screen\Unit 13 Respawn Screen\obj\Debug\net6.0\scopedcss\Pages\MainContent.razor.rz.scp.css
