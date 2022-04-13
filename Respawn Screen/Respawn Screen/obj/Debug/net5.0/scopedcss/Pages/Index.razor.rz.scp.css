@@ -1,0 +1,11 @@
+#flex-row[b-1n7eydv2ma] {
+    color: black;
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+#bottom-controls[b-1n7eydv2ma] {
+    display: flex;
+    flex-direction: row;
+}
