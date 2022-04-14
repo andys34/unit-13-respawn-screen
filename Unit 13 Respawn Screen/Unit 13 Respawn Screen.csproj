@@ -7,4 +7,16 @@
     <RootNamespace>Unit_13_Respawn_Screen</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="AdminScreen\Components\BottomControls.razor.css" />
+    <None Remove="AdminScreen\Components\MarkerList.razor.css" />
+    <None Remove="AdminScreen\Components\RespawnScreen.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="AdminScreen\Components\BottomControls.razor.css" />
+    <Content Include="AdminScreen\Components\MarkerList.razor.css" />
+    <Content Include="AdminScreen\Components\RespawnScreen.razor.css" />
+  </ItemGroup>
+
 </Project>
