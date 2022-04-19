@@ -12,3 +12,24 @@
          @Body
     </main>
 </div>
+
+
+
+<div style=@DialogStyle class="dialog-window">
+  <div class="dialog-window-content">
+    <p>Please choose a layout to load...</p>
+  </div>
+</div>
+
+@code{
+    private string DialogStyle = "display: block;";
+    
+    private void ShowDialog()
+    {
+        DialogStyle = "display: block;";
+    }
+    private void HideDialog()
+    {
+        DialogStyle = "display: none;";
+    }
+}
