@@ -1,0 +1,38 @@
+﻿.dialog-window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(196, 196, 196, 0.75);
+}
+
+.dialog-window-content {
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.layouts-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.layout-container {
+    border: 1px solid white;
+    padding: 15px;
+    color: white;
+}
+
+.layout {
+    text-decoration:none!important;
+    color: white;
+}

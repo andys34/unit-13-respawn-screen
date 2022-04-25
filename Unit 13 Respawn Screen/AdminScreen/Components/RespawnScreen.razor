@@ -1,3 +1,16 @@
-﻿<div id="respawn-screen-container">
-    Respawn screen
+﻿@inherits MainLayout
+
+<div id="respawn-screen-container">
+    @selectedLayout
 </div>
+
+
+@code{
+    private string layoutName = "test";
+
+
+    void SetLayout(string layout)
+    {
+        layoutName = layout;
+    }
+}

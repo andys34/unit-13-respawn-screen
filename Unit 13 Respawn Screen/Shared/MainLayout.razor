@@ -4,8 +4,8 @@
 <PageTitle>Unit 13 Respawn Screen</PageTitle>
 
 <div class="page">
-    <div class="sidebar">
-        <LayoutExplorer />
+    <div class="top">
+        <TopBar/>
     </div>
 
     <main class="content">
@@ -13,23 +13,6 @@
     </main>
 </div>
 
-
-
-<div style=@DialogStyle class="dialog-window">
-  <div class="dialog-window-content">
-    <p>Please choose a layout to load...</p>
-  </div>
-</div>
-
 @code{
-    private string DialogStyle = "display: block;";
-    
-    private void ShowDialog()
-    {
-        DialogStyle = "display: block;";
-    }
-    private void HideDialog()
-    {
-        DialogStyle = "display: none;";
-    }
+    public string selectedLayout = "default";
 }

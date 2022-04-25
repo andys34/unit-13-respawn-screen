@@ -1,0 +1,36 @@
+﻿@inject IJSRuntime JsRuntime
+@inherits MainLayout
+
+<div style=@DialogStyle class="dialog-window">
+  <div class="dialog-window-content">
+    <p>Please choose a layout to load...</p>
+    <div class="layouts-flex">
+        @foreach (Data.Scenario obj in scenarios)
+            {
+            <div class="layout-container">
+                <NavLink @onclick="@(() => LoadLayout("hi"))" href="" Match="NavLinkMatch.All">
+                    <span class="layout" aria-hidden="true">@obj.Name</span> 
+                </NavLink>
+            </div>
+            }
+    </div>
+  </div>
+</div>
+
+@code{
+    private string DialogStyle = "display: block;";
+    private Data.Scenario[] scenarios = Data.BackendService.Scenarios;
+
+    private void ShowDialog()
+    {
+        DialogStyle = "display: block;";
+    }
+    private void HideDialog()
+    {
+        DialogStyle = "display: none;";
+    }
+    private void LoadLayout(string name)
+    {
+        selectedLayout = name;
+    }
+}

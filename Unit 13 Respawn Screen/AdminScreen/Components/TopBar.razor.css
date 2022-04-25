@@ -1,0 +1,16 @@
+﻿.flex-column{
+    display:flex;
+    flex-direction:row!important;
+    gap: 10px;
+}
+
+.browse-layouts-container{
+    width: 85px;
+    background-color:black;
+    color:white;
+}
+
+.layout-title-briefing-container{
+    background-color:black;
+    color:white;
+}
