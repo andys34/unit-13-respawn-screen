@@ -1,6 +1,7 @@
 ﻿
 namespace Unit_13_Respawn_Screen.Data
 {
+    //create methods instead of taking raw mock data
     public class BackendService
     {
         public static readonly Scenario[] Scenarios =
@@ -13,6 +14,6 @@ namespace Unit_13_Respawn_Screen.Data
             new Scenario("Royal Rumble", new Layout[] { new Layout("Payload", new Marker[] { new Marker("i0030", 134.23f, 13.52f)})}),
             new Scenario("Juice Mixer", new Layout[] { new Layout("Payload", new Marker[] { new Marker("i0030", 134.23f, 13.52f)})}),
             new Scenario("Operation Loon", new Layout[] { new Layout("Payload", new Marker[] { new Marker("i0030", 134.23f, 13.52f)})})
-        };        
+        };
     }
 }

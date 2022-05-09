@@ -2,15 +2,46 @@
     display:flex;
     flex-direction:row!important;
     gap: 10px;
+    justify-content:space-evenly;
+    height: 69px;
 }
 
-.browse-layouts-container{
+.top-left-container{
     width: 85px;
     background-color:black;
     color:white;
+    text-align:center;
 }
 
-.layout-title-briefing-container{
-    background-color:black;
-    color:white;
+.top-right-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-grow: 1;
+}
+
+.details-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.details-input {
+    width: 350px;
+    font-size: 17px;
+    background: #565656;
+    color: #24FF00;
+    outline-width:0;
+    border:none;
+    height: 34px;
+}
+
+.details-info{
+    font-size:16px;
+}
+
+.briefing{
+    color: white;
 }

@@ -1,13 +1,14 @@
 ﻿@inherits MainLayout
 
 <div id="respawn-screen-container">
-    @selectedLayout
+    default
 </div>
 
 
 @code{
+    [Parameter] public EventCallback<string> OnChange { get; set; }
     private string layoutName = "test";
-
+    private Unit_13_Respawn_Screen.Data.Layout currentLayout{ get; set; }
 
     void SetLayout(string layout)
     {

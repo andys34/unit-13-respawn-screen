@@ -3,5 +3,9 @@
 
 <div id="flex-row">
     <RespawnScreen/>
-    <MarkerList/>
+    <MarkerList SetLayout="SetLayout"/>
 </div>
+
+@code{
+    [Parameter] public EventCallback<Unit_13_Respawn_Screen.Data.Layout> SetLayout { get; set; }
+}

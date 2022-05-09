@@ -1,3 +1,8 @@
 ﻿<div id="markers-container">
-    Markers
+    markers
 </div>
+
+        @code{
+        [Parameter] public EventCallback<Unit_13_Respawn_Screen.Data.Layout> SetLayout { get; set; }
+        private Unit_13_Respawn_Screen.Data.Layout selectedLayout{ get; set; }
+}

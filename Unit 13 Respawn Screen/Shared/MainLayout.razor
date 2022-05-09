@@ -5,14 +5,21 @@
 
 <div class="page">
     <div class="top">
-        <TopBar/>
+         <TopBar/>
     </div>
 
     <main class="content">
-         @Body
+         <MainContent/>
     </main>
+
+    <LayoutPopup />
 </div>
 
 @code{
     public string selectedLayout = "default";
+
+    public Unit_13_Respawn_Screen.Data.Layout ChangeLayout(Data.Layout scenario)
+    {
+        return scenario;
+    }
 }

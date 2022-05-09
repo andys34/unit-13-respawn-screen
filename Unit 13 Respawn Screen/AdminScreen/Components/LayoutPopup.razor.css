@@ -20,8 +20,27 @@
     width: 80%;
 }
 
+.top-flex {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.new-button {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.dialog-message {
+    font-weight: 700;
+    font-size: 16px;
+}
+
 .layouts-flex {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 15px;
 }
@@ -30,9 +49,13 @@
     border: 1px solid white;
     padding: 15px;
     color: white;
+    text-align:center;
+}
+
+.layout-container :hover{
+    color: gray;
 }
 
 .layout {
-    text-decoration:none!important;
     color: white;
 }

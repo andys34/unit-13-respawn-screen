@@ -3,13 +3,20 @@
 
 <div style=@DialogStyle class="dialog-window">
   <div class="dialog-window-content">
-    <p>Please choose a layout to load...</p>
+      <div class="top-flex">
+            <p class="dialog-message">Please choose a layout to load...</p>
+            <div class="layout-container">
+                <NavLink class="layout" style="text-decoration:none; color:white;" @onclick="@(() => LoadLayout("hi"))" href="" Match="NavLinkMatch.All">
+                    <span aria-hidden="true">NEW</span> 
+                </NavLink>
+            </div>
+      </div>
     <div class="layouts-flex">
         @foreach (Data.Scenario obj in scenarios)
             {
             <div class="layout-container">
-                <NavLink @onclick="@(() => LoadLayout("hi"))" href="" Match="NavLinkMatch.All">
-                    <span class="layout" aria-hidden="true">@obj.Name</span> 
+                <NavLink class="layout" style="text-decoration:none; color:white;" @onclick="@(() => LoadLayout("hi"))" href="" Match="NavLinkMatch.All">
+                    <span @onclick="(e => HideDialog(obj.Layouts[0]))" aria-hidden="true">@obj.Name</span> 
                 </NavLink>
             </div>
             }
@@ -18,6 +25,7 @@
 </div>
 
 @code{
+    [Parameter] public EventCallback<Unit_13_Respawn_Screen.Data.Layout> SetLayout { get; set; }
     private string DialogStyle = "display: block;";
     private Data.Scenario[] scenarios = Data.BackendService.Scenarios;
 
@@ -25,7 +33,7 @@
     {
         DialogStyle = "display: block;";
     }
-    private void HideDialog()
+    private void HideDialog(Unit_13_Respawn_Screen.Data.Layout selectedLayout)
     {
         DialogStyle = "display: none;";
     }

@@ -1,13 +1,16 @@
-﻿@namespace Unit_13_Respawn_Screen.AdminScreen.Components
-
-<div class="flex-column">
-    <div class="browse-layouts-container">
-        Browse
+﻿<div class="flex-column">
+    <div class="top-left-container">
+        <p>Browse layouts</p>
     </div>
 
-    <div class="layout-title-briefing-container">
-        Title & Briefing
+    <div class="top-right-container">
+        <div class="details-container">
+            <div class="details-info">Name</div>
+            <input class="details-input" type="text" placeholder="Layout name..."/>
+        </div>
+        <div class="details-container">
+            <div class="details-info">Briefing</div>
+            <input class="details-input briefing" type="text" placeholder="Mission briefing..."/>
+        </div>
     </div>
-
-    <LayoutPopup/>
 </div>
