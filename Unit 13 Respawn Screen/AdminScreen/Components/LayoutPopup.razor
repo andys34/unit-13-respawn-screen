@@ -1,5 +1,6 @@
 ﻿@inject IJSRuntime JsRuntime
 @inherits MainLayout
+@inject Unit_13_Respawn_Screen.Data.AppState AppState
 
 <div style=@DialogStyle class="dialog-window">
   <div class="dialog-window-content">
@@ -12,11 +13,11 @@
             </div>
       </div>
     <div class="layouts-flex">
-        @foreach (Data.Scenario obj in scenarios)
+        @foreach (Data.Layout obj in layouts)
             {
             <div class="layout-container">
                 <NavLink class="layout" style="text-decoration:none; color:white;" @onclick="@(() => LoadLayout("hi"))" href="" Match="NavLinkMatch.All">
-                    <span @onclick="(e => HideDialog(obj.Layouts[0]))" aria-hidden="true">@obj.Name</span> 
+                    <span @onclick="@(e => SelectLayout(obj))" aria-hidden="true">@obj.Name</span> 
                 </NavLink>
             </div>
             }
@@ -27,7 +28,7 @@
 @code{
     [Parameter] public EventCallback<Unit_13_Respawn_Screen.Data.Layout> SetLayout { get; set; }
     private string DialogStyle = "display: block;";
-    private Data.Scenario[] scenarios = Data.BackendService.Scenarios;
+    private Data.Layout[] layouts = Data.BackendService.Layouts;
 
     private void ShowDialog()
     {
@@ -35,10 +36,15 @@
     }
     private void HideDialog(Unit_13_Respawn_Screen.Data.Layout selectedLayout)
     {
-        DialogStyle = "display: none;";
     }
     private void LoadLayout(string name)
     {
         selectedLayout = name;
+    }
+
+    void SelectLayout(Unit_13_Respawn_Screen.Data.Layout layout)
+    {
+        DialogStyle = "display: none;";
+        AppState.SetLayout(layout);
     }
 }

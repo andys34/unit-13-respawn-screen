@@ -3,6 +3,7 @@
     public class Layout
     {
         public string Name;
+        public string Briefing = "";
 
         public Marker[] Markers { get => markers.ToArray(); }
         private List<Marker> markers = new List<Marker>();

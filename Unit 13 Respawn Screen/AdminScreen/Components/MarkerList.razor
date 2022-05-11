@@ -1,8 +1,21 @@
-﻿<div id="markers-container">
-    markers
+﻿@inject Unit_13_Respawn_Screen.Data.AppState AppState
+@implements IDisposable
+
+<div id="markers-container">
+    @foreach(Data.Marker obj in AppState.SelectedLayout.Markers)
+    {
+        <div>yep</div>
+    }
 </div>
 
-        @code{
-        [Parameter] public EventCallback<Unit_13_Respawn_Screen.Data.Layout> SetLayout { get; set; }
-        private Unit_13_Respawn_Screen.Data.Layout selectedLayout{ get; set; }
+@code{
+    protected override void OnInitialized()
+    {
+        AppState.OnChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        AppState.OnChange -= StateHasChanged;
+    }
 }

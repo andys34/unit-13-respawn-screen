@@ -1,17 +1,19 @@
-﻿@inherits MainLayout
+﻿@inject Unit_13_Respawn_Screen.Data.AppState AppState
+@implements IDisposable
 
 <div id="respawn-screen-container">
-    default
+    @AppState.SelectedLayout.Name
 </div>
 
 
 @code{
-    [Parameter] public EventCallback<string> OnChange { get; set; }
-    private string layoutName = "test";
-    private Unit_13_Respawn_Screen.Data.Layout currentLayout{ get; set; }
-
-    void SetLayout(string layout)
+    protected override void OnInitialized()
     {
-        layoutName = layout;
+        AppState.OnChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        AppState.OnChange -= StateHasChanged;
     }
 }
