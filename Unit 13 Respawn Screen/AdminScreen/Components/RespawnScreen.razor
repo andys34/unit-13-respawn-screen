@@ -9,11 +9,11 @@
 @code{
     protected override void OnInitialized()
     {
-        AppState.OnChange += StateHasChanged;
+        AppState.LayoutChange += StateHasChanged;
     }
 
     public void Dispose()
     {
-        AppState.OnChange -= StateHasChanged;
+        AppState.LayoutChange -= StateHasChanged;
     }
 }

@@ -1,19 +1,25 @@
-﻿
-namespace Unit_13_Respawn_Screen.Data
+﻿namespace Unit_13_Respawn_Screen.Data
 {
     //create methods instead of taking raw mock data
-    public class BackendService
+    public static class BackendService
     {
-        public static readonly Layout[] Layouts =
+        public static int IdIndex => id++;
+        private static int id = 0;
+
+        public static Layout CreateLayout(string name)
         {
-            new Layout("#1 Small, quick, simple", new Marker[]{new Marker("i0030", 134.23f, 13.52f) }),
-            new Layout("#2 Small, mirrored", new Marker[]{new Marker("i0030", 134.23f, 13.52f) }),
-            new Layout("Payload", new Marker[] { new Marker("i0030", 134.23f, 13.52f) }),
-            new Layout("Payload", new Marker[] { new Marker("i0030", 134.23f, 13.52f) }),
-            new Layout("Payload", new Marker[] { new Marker("i0030", 134.23f, 13.52f) }),
-            new Layout("Payload", new Marker[] { new Marker("i0030", 134.23f, 13.52f) }),
-            new Layout("Payload", new Marker[] { new Marker("i0030", 134.23f, 13.52f) }),
-            new Layout("Payload", new Marker[] { new Marker("i0030", 134.23f, 13.52f) })
-        };
+            //If layout is valid send to server
+
+            return new Layout(name, id++);
+        }
+
+        public static Layout GetLayout(int id) => MockData.Layouts.Where(x => x.Id == id).FirstOrDefault() ?? new Layout("ERROR", 9999);
+
+        public static Layout GetLayout(Preview preview) => MockData.Layouts.Where(x => x.Id == preview.Id).FirstOrDefault() ?? new Layout("ERROR", 9999);
+
+        public static Preview[] GetPreviews()
+        {
+            return MockData.Previews;
+        }
     }
 }

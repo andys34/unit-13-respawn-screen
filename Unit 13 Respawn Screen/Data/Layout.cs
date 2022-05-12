@@ -3,31 +3,26 @@
     public class Layout
     {
         public string Name;
-        public string Briefing = "";
-
+        public string Briefing = "Brief briefing";
+        public int Id { get; private set; }
         public Marker[] Markers { get => markers.ToArray(); }
         private List<Marker> markers = new List<Marker>();
-        public Layout(string name)
+        public Layout(string name, int id)
         {
             Name = name;
+            Id = id;
         }
 
-        public Layout(string name, Marker[] markers)
+        public Layout(string name, int id, Marker[] markers)
         {
             Name = name;
+            Id = id;
             this.markers = markers.ToList();
         }
-        public Layout(string name, List<Marker> markers)
-        {
-            Name = name;
-            this.markers = markers;
-        }
-
         public void AddMarker(Marker marker)
         {
             markers.Add(marker);
         }
-
         public void RemoveMarker(Marker marker)
         {
             markers.Remove(marker);

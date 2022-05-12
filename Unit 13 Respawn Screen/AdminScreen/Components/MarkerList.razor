@@ -4,18 +4,18 @@
 <div id="markers-container">
     @foreach(Data.Marker obj in AppState.SelectedLayout.Markers)
     {
-        <div>yep</div>
+        <div>@obj.X x @obj.Y</div>
     }
 </div>
 
 @code{
     protected override void OnInitialized()
     {
-        AppState.OnChange += StateHasChanged;
+        AppState.LayoutChange += StateHasChanged;
     }
 
     public void Dispose()
     {
-        AppState.OnChange -= StateHasChanged;
+        AppState.LayoutChange -= StateHasChanged;
     }
 }

@@ -2,17 +2,35 @@
 {
     public class AppState
     {
-        public Layout SelectedLayout { get; private set; } = new Layout("default", new Marker[] { new Marker(0, 4), new Marker(0, 4), new Marker(0, 4) });
+        public Layout SelectedLayout { get; private set; } = new Layout("default", 0, new Marker[] { new Marker(0, 4), new Marker(0, 4), new Marker(0, 4) });
+        public string BrowseDialogShown = "display: block;";
 
-        public event Action OnChange;
+        public event Action? LayoutChange;
+        public event Action? BrowseDialogChange;
 
         public void SetLayout(Layout layout)
         {
             SelectedLayout = layout;
-            NotifyStateChanged();
-            
+            LayoutStateChanged();
+        }
+        public void SetLayout(Preview preview)
+        {
+            SelectedLayout = BackendService.GetLayout(preview);
+            LayoutStateChanged();
         }
 
-        private void NotifyStateChanged() =>  OnChange?.Invoke();
+        public void ShowBrowseDialog()
+        {
+            BrowseDialogShown = "display: block;";
+            BrowseDialogStateChanged();
+        }
+        public void HideBrowseDialog()
+        {
+            BrowseDialogShown = "display: none;";
+            BrowseDialogStateChanged();
+        }
+
+        private void LayoutStateChanged() => LayoutChange?.Invoke();
+        private void BrowseDialogStateChanged() => BrowseDialogChange?.Invoke();
     }
 }

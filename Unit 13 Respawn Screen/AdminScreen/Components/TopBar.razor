@@ -1,16 +1,38 @@
-﻿<div class="flex-column">
-    <div class="top-left-container">
-        <p>Browse layouts</p>
+﻿@inject IJSRuntime JsRuntime
+@inherits MainLayout
+@inject Unit_13_Respawn_Screen.Data.AppState AppState
+@implements IDisposable
+
+<div class="flex-column">
+    <div @onclick="ShowBrowseDialog" class="top-left-container">
+        <div>Browse layouts</div>
     </div>
 
     <div class="top-right-container">
         <div class="details-container">
             <div class="details-info">Name</div>
-            <input class="details-input" type="text" placeholder="Layout name..."/>
+            <input class="details-input" type="text" placeholder="Layout name..." value=@AppState.SelectedLayout.Name/>
         </div>
         <div class="details-container">
             <div class="details-info">Briefing</div>
-            <input class="details-input briefing" type="text" placeholder="Mission briefing..."/>
+            <input class="details-input briefing" type="text" placeholder="Mission briefing..." value=@AppState.SelectedLayout.Briefing/>
         </div>
     </div>
 </div>
+
+
+@code{
+    protected override void OnInitialized()
+    {
+        AppState.LayoutChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        AppState.LayoutChange -= StateHasChanged;
+    }
+    void ShowBrowseDialog()
+    {
+        AppState.ShowBrowseDialog();
+    }
+}
