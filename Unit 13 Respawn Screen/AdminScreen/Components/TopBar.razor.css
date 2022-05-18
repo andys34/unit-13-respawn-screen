@@ -12,11 +12,21 @@
     color: white;
     text-align: center;
     display:flex;
+    flex-direction:column;
 }
 
 .top-left-container :hover {
-    background-color:gray;
-    cursor:pointer;
+    background-color: rgb(69, 67, 67);
+    cursor: pointer;
+}
+
+.browse-text{
+    font-size:14px;
+}
+
+.browse-button {
+    background-color: none;
+    flex-grow: 1;
 }
 
 .top-right-container {
@@ -26,6 +36,12 @@
     flex-direction: row;
     justify-content:space-evenly;
     flex-grow: 1;
+}
+
+.browse-icon{
+    height:24px;
+    width:24px;
+    content:url("Assets/browse.svg");
 }
 
 .details-container {

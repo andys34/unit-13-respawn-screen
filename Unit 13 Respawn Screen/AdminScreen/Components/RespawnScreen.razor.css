@@ -24,6 +24,7 @@
 }
 
 .bottom-control:hover {
+    background-color:gray;
     cursor:pointer;
 }
 

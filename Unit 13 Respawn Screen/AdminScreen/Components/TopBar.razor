@@ -4,10 +4,12 @@
 @implements IDisposable
 
 <div class="flex-column">
-    <div @onclick="ShowBrowseDialog" class="top-left-container">
-        <div>Browse layouts</div>
+    <div class="top-left-container">
+        <div @onclick="ShowBrowseDialog" class="browse-button">
+            <div><img class="browse-icon"/></div>
+            <div class="browse-text">Browse layouts</div>
+        </div>
     </div>
-
     <div class="top-right-container">
         <div class="details-container">
             <div class="details-info">Name</div>
