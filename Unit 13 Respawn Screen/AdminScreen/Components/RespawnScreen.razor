@@ -2,7 +2,24 @@
 @implements IDisposable
 
 <div id="respawn-screen-container">
-    @AppState.SelectedLayout.Name
+     <img class="respawn-map" src="Assets/Map.jpg" asp-append-version="true" />
+     <div class="bottom-controls">
+         <div class="botom-controls-container">
+                    <img class="bottom-control" src="Assets/undo.svg" />
+                    <img class="bottom-control" src="Assets/redo.svg" />
+                    <img class="bottom-control" src="Assets/undo_all.svg" />
+         </div>
+         <div class="botom-controls-container">
+                    <img class="bottom-control" src="Assets/add_location.svg" />
+                    <img class="bottom-control" src="Assets/save.svg" />
+         </div>
+         <div class="botom-controls-container">
+                    marker select
+         </div>
+         <div class="botom-controls-container">
+                    <img class="bottom-control" src="Assets/fullscreen.svg" />
+         </div>
+    </div>
 </div>
 
 

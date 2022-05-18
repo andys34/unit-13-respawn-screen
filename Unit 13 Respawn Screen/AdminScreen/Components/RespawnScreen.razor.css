@@ -2,5 +2,33 @@
     color: white;
     background-color: black;
     aspect-ratio: 16/9;
-    height: 100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.respawn-map{
+    padding:10px;
+    height:95%;
+}
+
+.bottom-controls{
+    padding:10px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.bottom-control {
+    height: 31px;
+    width: 31px;
+    background-color: rgba(196, 196, 196, 1);
+}
+
+.bottom-control:hover {
+    cursor:pointer;
+}
+
+
+.botom-controls-container{
+    display:flex;
+    gap:5px;
 }
