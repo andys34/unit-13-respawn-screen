@@ -2,4 +2,17 @@
     color: white;
     flex-grow: 1;
     background-color: #565656;
+    padding: 15px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.marker-container{
+    display:flex;
+    flex-direction:column;
+}
+
+.marker-inside{
+    display:flex;
+    justify-content:space-evenly;
 }
