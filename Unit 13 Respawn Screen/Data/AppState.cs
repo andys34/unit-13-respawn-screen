@@ -2,7 +2,7 @@
 {
     public class AppState
     {
-        public Layout SelectedLayout { get; private set; } = new Layout("default", 0, new Marker[] { new Marker("Blue Objective", "Blue_Objective.png", 0, 4), new Marker("Red Objective", "Red_Objective.png", 0, 4), new Marker("Blue Checkpoint", "Blue_Checkpoint.png", 0, 4) });
+        public Layout SelectedLayout { get; private set; } = new Layout("default", 0, new Marker[] { new Marker("Blue Objective", "Blue_Objective.svg", 0, 4), new Marker("Red Objective", "Red_Objective.svg", 0, 4), new Marker("Blue Checkpoint", "Blue_Checkpoint.svg", 0, 4) });
         public string BrowseDialogShown = "display: block;";
 
         public event Action? LayoutChange;

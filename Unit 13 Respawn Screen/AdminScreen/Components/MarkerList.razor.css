@@ -3,16 +3,38 @@
     flex-grow: 1;
     background-color: #565656;
     padding: 15px;
+    padding-top:0px;
     padding-left:0px;
     padding-right:0px;
 }
 
 .marker-container{
+    padding-top:10px;
     display:flex;
     flex-direction:column;
 }
 
+.marker-container:hover {
+    background-color:gray;
+    cursor:pointer;
+}
+
 .marker-inside{
+    width:20%;
+    margin:auto;
     display:flex;
     justify-content:space-evenly;
+}
+
+.marker-icon {
+    height: 32px;
+    width: auto;
+}
+
+.marker-name{
+    padding:5px;
+}
+
+.horizontal-line{
+    margin-bottom:0px;
 }
