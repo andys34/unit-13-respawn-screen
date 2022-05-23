@@ -1,22 +1,30 @@
 ﻿#respawn-screen-container {
     color: white;
     background-color: black;
-    aspect-ratio: 16/9;
+    aspect-ratio: 23/14;
+    flex-shrink:2;
 }
 
 .respawn-map-container {
     padding: 10px;
     padding-bottom: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center
 }
 
 .respawn-map {
-    width: 76vw;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto
 }
 
 .bottom-controls{
     padding:10px;
     display:flex;
     justify-content:space-between;
+    background-color:black;
 }
 
 .bottom-control {
