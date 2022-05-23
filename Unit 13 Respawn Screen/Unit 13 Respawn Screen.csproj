@@ -8,17 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="AdminScreen\Components\LayoutPopup.razor.css" />
-    <None Remove="AdminScreen\Components\MarkerList.razor.css" />
-    <None Remove="AdminScreen\Components\RespawnScreen.razor.css" />
-    <None Remove="AdminScreen\Components\TopBar.razor.css" />
+    <None Remove="Components\LayoutPopup.razor.css" />
+    <None Remove="Components\MarkerList.razor.css" />
+    <None Remove="Components\RespawnScreen.razor.css" />
+    <None Remove="Components\TopBar.razor.css" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="AdminScreen\Components\LayoutPopup.razor.css" />
-    <Content Include="AdminScreen\Components\MarkerList.razor.css" />
-    <Content Include="AdminScreen\Components\RespawnScreen.razor.css" />
-    <Content Include="AdminScreen\Components\TopBar.razor.css" />
+    <Content Include="Components\LayoutPopup.razor.css" />
+    <Content Include="Components\MarkerList.razor.css" />
+    <Content Include="Components\RespawnScreen.razor.css" />
+    <Content Include="Components\TopBar.razor.css" />
   </ItemGroup>
 
 </Project>
