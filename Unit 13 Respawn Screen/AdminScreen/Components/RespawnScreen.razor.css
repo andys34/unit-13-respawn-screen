@@ -2,14 +2,15 @@
     color: white;
     background-color: black;
     aspect-ratio: 16/9;
-    display:flex;
-    flex-direction:column;
 }
 
-.respawn-map{
-    padding:10px;
-    padding-bottom:0px;
-    height:95%;
+.respawn-map-container {
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.respawn-map {
+    width: 76vw;
 }
 
 .bottom-controls{
