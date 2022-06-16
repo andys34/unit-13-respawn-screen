@@ -18,12 +18,6 @@
     position: relative;
 }
 
-.blue_checkpoint {
-    position: absolute;
-    top: 40px;
-    left: 220px;
-}
-
 .respawn-map {
     position: relative;
     display: block;

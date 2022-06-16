@@ -1,11 +1,26 @@
 ﻿@inject Unit_13_Respawn_Screen.Data.AppState AppState
 @implements IDisposable
+@inject IJSRuntime JsRuntime
 
 <div id="respawn-screen-container">
      <div class="respawn-map-container">
        <div class="canvas">
            <img class="respawn-map" src="Assets/Map.jpg" asp-append-version="true" >
-           <img class="blue_checkpoint" src="Markers/Blue_Checkpoint.svg"/>
+               @foreach(Data.Marker obj in AppState.displayedMarkers)
+                {
+                int id = @rnd.Next(1000, 9999);
+                string topCoord = @obj.Y + "px";
+                string leftCoord = @obj.X + "px";
+                <img class="marker-@id" src="Markers/@obj.Icon"/>
+                  <style>
+                        .marker-@id
+                        {
+                            position: absolute;
+                            top: @topCoord;
+                            left: @leftCoord;
+                        }
+                 </style>
+                }
        </div>
      </div>
      <div class="bottom-controls">
@@ -15,7 +30,7 @@
                     <img class="bottom-control" src="Assets/undo_all.svg" />
          </div>
          <div class="botom-controls-container">
-                    <img class="bottom-control" src="Assets/add_location.svg" />
+                    <img class="bottom-control" @onclick="AddMarker" src="Assets/add_location.svg" />
                     <img class="bottom-control" src="Assets/save.svg" />
          </div>
          <div class="botom-controls-container">
@@ -29,6 +44,8 @@
 
 
 @code{
+    private Random rnd = new Random();
+
     protected override void OnInitialized()
     {
         AppState.LayoutChange += StateHasChanged;
@@ -37,5 +54,10 @@
     public void Dispose()
     {
         AppState.LayoutChange -= StateHasChanged;
+    }
+
+    void AddMarker()
+    {
+        AppState.AddMarker(new Data.Marker("test", "Blue_Checkpoint.svg", rnd.Next(0, 200), rnd.Next(0, 200)));
     }
 }
