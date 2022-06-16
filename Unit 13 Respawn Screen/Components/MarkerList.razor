@@ -19,11 +19,11 @@
 @code{
     protected override void OnInitialized()
     {
-        AppState.LayoutChange += StateHasChanged;
+        AppState.MarkerChange += StateHasChanged;
     }
 
     public void Dispose()
     {
-        AppState.LayoutChange -= StateHasChanged;
+        AppState.MarkerChange -= StateHasChanged;
     }
 }

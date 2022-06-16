@@ -4,7 +4,6 @@
     {
         public Layout SelectedLayout { get; private set; } = new Layout("default", 0, new Marker[] { new Marker("Blue Objective", "Blue_Objective.svg", 0, 4), new Marker("Red Objective", "Red_Objective.svg", 0, 4), new Marker("Blue Checkpoint", "Blue_Checkpoint.svg", 0, 4) });
         public string BrowseDialogShown = "display: block;";
-        public List<Marker> displayedMarkers = new List<Marker>() { };
 
         public event Action? LayoutChange;
         public event Action? BrowseDialogChange;
@@ -12,7 +11,8 @@
 
         public void AddMarker(Marker m)
         {
-            displayedMarkers.Add(m);
+            SelectedLayout.AddMarker(m);
+            MarkerStateChanged();
         }
         public void SetLayout(Layout layout)
         {

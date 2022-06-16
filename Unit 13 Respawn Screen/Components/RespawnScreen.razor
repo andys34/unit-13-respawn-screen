@@ -6,7 +6,7 @@
      <div class="respawn-map-container">
        <div class="canvas">
            <img class="respawn-map" src="Assets/RespawnScreen.jpg" asp-append-version="true" >
-               @foreach(Data.Marker obj in AppState.displayedMarkers)
+               @foreach(Data.Marker obj in AppState.SelectedLayout.Markers)
                 {
                 int id = @rnd.Next(1000, 9999);
                 string topCoord = @obj.Y + "px";
@@ -58,6 +58,6 @@
 
     void AddMarker()
     {
-        AppState.AddMarker(new Data.Marker("test", "Blue_Checkpoint.svg", rnd.Next(0, 200), rnd.Next(0, 200)));
+        AppState.AddMarker(new Data.Marker("Marker", "Blue_Checkpoint.svg", rnd.Next(0, 200), rnd.Next(0, 200)));
     }
 }
