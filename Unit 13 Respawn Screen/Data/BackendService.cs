@@ -13,13 +13,7 @@
             return new Layout(name, id++);
         }
 
-        public static Layout GetLayout(int id) => MockData.Layouts.Where(x => x.Id == id).FirstOrDefault() ?? new Layout("ERROR", 9999);
+        public static Layout GetLayout(int id) => AppState.Instance.Layouts.Where(x => x.Id == id).FirstOrDefault() ?? new Layout("ERROR", 9999);
 
-        public static Layout GetLayout(Preview preview) => MockData.Layouts.Where(x => x.Id == preview.Id).FirstOrDefault() ?? new Layout("ERROR", 9999);
-
-        public static Preview[] GetPreviews()
-        {
-            return MockData.Previews;
-        }
     }
 }
